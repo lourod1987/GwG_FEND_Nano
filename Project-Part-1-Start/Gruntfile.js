@@ -12,16 +12,24 @@ module.exports = function(grunt) {
     responsive_images: {
       dev: {
         options: {
-          engine: 'im',
-          sizes: [{
-            /*
-            Change these:
-            
-            width: ,
-            suffix: ,
-            quality:
-            */
-          }]
+          engine: 'gm',
+          sizes: [
+          {
+            name: "small",
+            width: 250,
+            quality: 25
+          },
+          {
+            name: "medium",
+            width: 500,
+            quality: 35
+          },
+          {
+            name: "large",
+            width: 1024,
+            quality: 75
+          }
+        ]
         },
 
         /*
